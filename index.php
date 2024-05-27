@@ -32,9 +32,15 @@
                 <a href="#projects">Projects</a>
             </li>
             <li>
+                <a href="#experience">Work Experience</a>
+            </li>
+            <li>
                 <a href="#contact">Contact Me</a>
             </li>
         </ul>
+        <div class="btn">
+            <a href="./login.php" class="ini_se">Iniciar Sesión</a>
+        </div>
         <div class='bx bx-menu' id="menu-icon"></div>
     </header>
     <section class="home" id="home">
@@ -178,6 +184,33 @@
             </div>
         </div>
     </section>
+    <section class="work_experience" id="experience">
+        <h1> - Work Experience - </h1>
+        <div class="content_exp">
+            <div class="content_exp_box">
+                <div class="content_exp_img">
+                <img src="./images/Logo-GOLD.jpg" alt="logo gold rh">
+                </div>
+                <div class="content_exp_text">
+                    <h2>Gold RH</h2>
+                    <h5>Commercial Auxiliar</h5>
+                    <p>October 2019 - May 2020</p>
+                </div>
+            </div>
+            <div class="content_exp_box">
+                <div class="content_exp_img">
+                <img src="./images/Logo-GOLD.jpg" alt="logo gold rh">
+                </div>
+                <div class="content_exp_text">
+                    <h2>Gold RH</h2>
+                    <h5>Commercial Advisor</h5>
+                    <p>Sep 2020 - Present</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section class="contact" id="contact">
         <h1> - Contact Me - </h1>
         <div class="contact_box">

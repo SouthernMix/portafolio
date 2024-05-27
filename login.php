@@ -1,3 +1,13 @@
+<?php
+  require_once("config/config.php");
+
+  if(isset($_POST["enviar"]) and $_POST["enviar"]=='si'){
+    require_once("model/Usuario.php");
+    $usuario= new Usuario();
+    $usuario->login();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +62,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
+            <input type="hidden" name="enviar" class="form-control" value="si">
             <button type="submit" class="btn btn-primary btn-block">Sign In</button>
           </div>
           <!-- /.col -->

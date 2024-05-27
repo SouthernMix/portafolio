@@ -18,7 +18,7 @@
             return $this->dbh->query("SET NAMES 'utf8'");
         }
         public static function ruta(){
-            return "http://localhost/Portafolio/";
+            return "../index.php";
         }
     }
 ?>

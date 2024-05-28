@@ -1,5 +1,5 @@
 <?php
-  require_once("config/config.php");
+  require_once("config/conexion.php");
 
   if(isset($_POST["enviar"]) and $_POST["enviar"]=='si'){
     require_once("model/Usuario.php");
@@ -35,6 +35,26 @@
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="./view/dashboard.php" method="post">
+          <?php 
+            if(isset($_GET["m"])){
+              switch($_GET["m"]){
+                case "1";
+                ?>
+                <div class="alert alert-danger" role="alert">
+                    Los datos ingresados son incorrectos
+                </div>
+                <?php
+                break;
+                case "2";
+                ?>
+                <div class="alert alert-danger" role="alert">
+                  El formulario tiene los campos vacíos
+                </div>
+                <?php
+                break;
+              }
+            }        
+          ?>
         <div class="input-group mb-3">
           <input type="email" name="correo" id="correo" class="form-control" placeholder="Email">
           <div class="input-group-append">

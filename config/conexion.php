@@ -1,5 +1,4 @@
 <?php 
-    /*TODO: Inicializando la sesion del usuario */
     session_start();
 
     class Conectar{
@@ -18,7 +17,7 @@
             return $this->dbh->query("SET NAMES 'utf8'");
         }
         public static function ruta(){
-            return "../index.php";
+            return "http://localhost/Portfolio/";
         }
     }
 ?>

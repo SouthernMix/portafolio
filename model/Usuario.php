@@ -3,7 +3,7 @@
         public function login(){
             $conectar=parent::Conexion();
             parent::set_names();
-            if(isset($post["enviar"])){
+            if(isset($_POST["enviar"])){
                 $correo =$_POST["correo"];
                 $password =$_POST["passwd"];
                 if(empty($correo) and empty($password)){
